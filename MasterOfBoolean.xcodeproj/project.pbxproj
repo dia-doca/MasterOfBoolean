@@ -13,6 +13,12 @@
 		212FC22426C5BC5500BECE91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212FC22226C5BC5500BECE91 /* Main.storyboard */; };
 		212FC22626C5BC5700BECE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212FC22526C5BC5700BECE91 /* Assets.xcassets */; };
 		212FC22926C5BC5700BECE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212FC22726C5BC5700BECE91 /* LaunchScreen.storyboard */; };
+		212FC23226C5CFBB00BECE91 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */; };
+		212FC23526C5CFE400BECE91 /* BooleanOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23426C5CFE400BECE91 /* BooleanOperation.swift */; };
+		212FC23726C5CFF100BECE91 /* BooleanExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23626C5CFF100BECE91 /* BooleanExpression.swift */; };
+		212FC23926C5CFFF00BECE91 /* BooleanExpressionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */; };
+		212FC23B26C5D00C00BECE91 /* BooleanExpressionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */; };
+		212FC23C26C5D24300BECE91 /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 212FC23026C5BD8500BECE91 /* SF-Mono-Bold.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		212FC22526C5BC5700BECE91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		212FC22826C5BC5700BECE91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		212FC22A26C5BC5700BECE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		212FC23026C5BD8500BECE91 /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
+		212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
+		212FC23426C5CFE400BECE91 /* BooleanOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanOperation.swift; sourceTree = "<group>"; };
+		212FC23626C5CFF100BECE91 /* BooleanExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpression.swift; sourceTree = "<group>"; };
+		212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpressionManager.swift; sourceTree = "<group>"; };
+		212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpressionProcessor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +75,22 @@
 				212FC22526C5BC5700BECE91 /* Assets.xcassets */,
 				212FC22726C5BC5700BECE91 /* LaunchScreen.storyboard */,
 				212FC22A26C5BC5700BECE91 /* Info.plist */,
+				212FC23026C5BD8500BECE91 /* SF-Mono-Bold.otf */,
+				212FC23326C5CFC700BECE91 /* BooleanLogic */,
 			);
 			path = MasterOfBoolean;
+			sourceTree = "<group>";
+		};
+		212FC23326C5CFC700BECE91 /* BooleanLogic */ = {
+			isa = PBXGroup;
+			children = (
+				212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */,
+				212FC23426C5CFE400BECE91 /* BooleanOperation.swift */,
+				212FC23626C5CFF100BECE91 /* BooleanExpression.swift */,
+				212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */,
+				212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */,
+			);
+			path = BooleanLogic;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				212FC23C26C5D24300BECE91 /* SF-Mono-Bold.otf in Resources */,
 				212FC22926C5BC5700BECE91 /* LaunchScreen.storyboard in Resources */,
 				212FC22626C5BC5700BECE91 /* Assets.xcassets in Resources */,
 				212FC22426C5BC5500BECE91 /* Main.storyboard in Resources */,
@@ -138,8 +165,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				212FC22126C5BC5500BECE91 /* ViewController.swift in Sources */,
+				212FC23526C5CFE400BECE91 /* BooleanOperation.swift in Sources */,
 				212FC21D26C5BC5500BECE91 /* AppDelegate.swift in Sources */,
+				212FC23926C5CFFF00BECE91 /* BooleanExpressionManager.swift in Sources */,
 				212FC21F26C5BC5500BECE91 /* SceneDelegate.swift in Sources */,
+				212FC23726C5CFF100BECE91 /* BooleanExpression.swift in Sources */,
+				212FC23B26C5D00C00BECE91 /* BooleanExpressionProcessor.swift in Sources */,
+				212FC23226C5CFBB00BECE91 /* DifficultyLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

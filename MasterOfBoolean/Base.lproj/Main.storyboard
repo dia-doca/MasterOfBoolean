@@ -1,24 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vuR-cu-SXf">
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="SF-Mono-Bold.otf">
+            <string>SFMono-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MasterOfBoolean" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y0H-hQ-et6">
+                                <rect key="frame" x="211" y="800" width="183" height="42"/>
+                                <fontDescription key="fontDescription" name="SFMono-Bold" family="SF Mono" pointSize="25"/>
+                                <state key="normal" title="false">
+                                    <color key="titleColor" name="keywords"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionFalse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9S3-BK-t5q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7h-58-MSr">
+                                <rect key="frame" x="20" y="800" width="183" height="42"/>
+                                <fontDescription key="fontDescription" name="SFMono-Bold" family="SF Mono" pointSize="25"/>
+                                <state key="normal" title="true">
+                                    <color key="titleColor" name="keywords"/>
+                                </state>
+                                <connections>
+                                    <action selector="actionTrue:" destination="BYZ-38-t0r" eventType="touchUpInside" id="g0t-Yh-tPa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="false || true" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uc-oE-k97">
+                                <rect key="frame" x="20" y="136" width="374" height="30"/>
+                                <fontDescription key="fontDescription" name="SFMono-Bold" family="SF Mono" pointSize="25"/>
+                                <color key="textColor" name="keywords"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="h7h-58-MSr" secondAttribute="bottom" constant="20" id="73Q-Q5-vFM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="y0H-hQ-et6" secondAttribute="trailing" constant="20" id="M6L-MY-7yJ"/>
+                            <constraint firstItem="1uc-oE-k97" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="48" id="V49-oB-FBy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="y0H-hQ-et6" secondAttribute="bottom" constant="20" id="gxQ-7u-2It"/>
+                            <constraint firstItem="h7h-58-MSr" firstAttribute="width" secondItem="y0H-hQ-et6" secondAttribute="width" id="iN8-m0-pCj"/>
+                            <constraint firstItem="h7h-58-MSr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="iQJ-Gx-Ala"/>
+                            <constraint firstItem="y0H-hQ-et6" firstAttribute="leading" secondItem="h7h-58-MSr" secondAttribute="trailing" constant="8" id="m0z-EL-HtE"/>
+                            <constraint firstItem="1uc-oE-k97" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="x5n-WL-LN3"/>
+                            <constraint firstItem="1uc-oE-k97" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="ynH-gX-2hM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="qD3-H0-I21">
+                        <nil key="title"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="1" id="0tT-fe-UW1">
+                            <rect key="frame" x="111.5" y="5.5" width="191" height="33"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Easy"/>
+                                <segment title="Normal"/>
+                                <segment title="Hard"/>
+                            </segments>
+                            <connections>
+                                <action selector="didChangeDifficultyLevel:" destination="BYZ-38-t0r" eventType="valueChanged" id="vcs-Qn-aiT"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="difficultyLevelControl" destination="0tT-fe-UW1" id="Pw5-di-Bn4"/>
+                        <outlet property="taskLabel" destination="1uc-oE-k97" id="ftY-9P-mc0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oBo-5P-QYt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vuR-cu-SXf" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CRv-wg-FEb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="gyP-ji-Cyl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u7r-83-BVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="background">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="keywords">
+            <color red="0.60759200000000002" green="0.13752600000000001" blue="0.57628400000000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+    </resources>
 </document>
