@@ -59,7 +59,7 @@ class BooleanExpressionProcessor {
             return isTrue ? "true" : "false"
         case .not(let expression):
             switch expression {
-            case .operand:
+            case .operand, .disjunction:
                 return "!\(stringFromBooleanExpression(expression))"
             default:
                 return "!(\(stringFromBooleanExpression(expression)))"
@@ -67,7 +67,7 @@ class BooleanExpressionProcessor {
         case .conjunction(let left, let right):
             return "\(stringFromBooleanExpression(left)) && \(stringFromBooleanExpression(right))"
         case .disjunction(let left, let right):
-            return "\(stringFromBooleanExpression(left)) || \(stringFromBooleanExpression(right))"
+            return "(\(stringFromBooleanExpression(left)) || \(stringFromBooleanExpression(right)))"
         }
     }
 

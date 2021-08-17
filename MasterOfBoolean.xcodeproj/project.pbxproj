@@ -14,12 +14,25 @@
 		212FC22626C5BC5700BECE91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 212FC22526C5BC5700BECE91 /* Assets.xcassets */; };
 		212FC22926C5BC5700BECE91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 212FC22726C5BC5700BECE91 /* LaunchScreen.storyboard */; };
 		212FC23226C5CFBB00BECE91 /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */; };
-		212FC23526C5CFE400BECE91 /* BooleanOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23426C5CFE400BECE91 /* BooleanOperation.swift */; };
 		212FC23726C5CFF100BECE91 /* BooleanExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23626C5CFF100BECE91 /* BooleanExpression.swift */; };
 		212FC23926C5CFFF00BECE91 /* BooleanExpressionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */; };
 		212FC23B26C5D00C00BECE91 /* BooleanExpressionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */; };
 		212FC23C26C5D24300BECE91 /* SF-Mono-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 212FC23026C5BD8500BECE91 /* SF-Mono-Bold.otf */; };
+		21BC324426CC44F600584C8F /* MasterOfBooleanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BC324326CC44F600584C8F /* MasterOfBooleanTests.swift */; };
+		21BC324B26CC459000584C8F /* BooleanExpressionProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */; };
+		21BC324C26CC45B300584C8F /* BooleanExpression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23626C5CFF100BECE91 /* BooleanExpression.swift */; };
+		21BC324D26CC4A8700584C8F /* DifficultyLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		21BC324626CC44F600584C8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 212FC21126C5BC5500BECE91 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 212FC21826C5BC5500BECE91;
+			remoteInfo = MasterOfBoolean;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		212FC21926C5BC5500BECE91 /* MasterOfBoolean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MasterOfBoolean.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,14 +45,23 @@
 		212FC22A26C5BC5700BECE91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		212FC23026C5BD8500BECE91 /* SF-Mono-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Mono-Bold.otf"; sourceTree = "<group>"; };
 		212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifficultyLevel.swift; sourceTree = "<group>"; };
-		212FC23426C5CFE400BECE91 /* BooleanOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanOperation.swift; sourceTree = "<group>"; };
 		212FC23626C5CFF100BECE91 /* BooleanExpression.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpression.swift; sourceTree = "<group>"; };
 		212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpressionManager.swift; sourceTree = "<group>"; };
 		212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooleanExpressionProcessor.swift; sourceTree = "<group>"; };
+		21BC324126CC44F600584C8F /* MasterOfBooleanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MasterOfBooleanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		21BC324326CC44F600584C8F /* MasterOfBooleanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterOfBooleanTests.swift; sourceTree = "<group>"; };
+		21BC324526CC44F600584C8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		212FC21626C5BC5500BECE91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		21BC323E26CC44F600584C8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -53,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				212FC21B26C5BC5500BECE91 /* MasterOfBoolean */,
+				21BC324226CC44F600584C8F /* MasterOfBooleanTests */,
 				212FC21A26C5BC5500BECE91 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				212FC21926C5BC5500BECE91 /* MasterOfBoolean.app */,
+				21BC324126CC44F600584C8F /* MasterOfBooleanTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -85,12 +109,20 @@
 			isa = PBXGroup;
 			children = (
 				212FC23126C5CFBB00BECE91 /* DifficultyLevel.swift */,
-				212FC23426C5CFE400BECE91 /* BooleanOperation.swift */,
 				212FC23626C5CFF100BECE91 /* BooleanExpression.swift */,
 				212FC23826C5CFFF00BECE91 /* BooleanExpressionManager.swift */,
 				212FC23A26C5D00C00BECE91 /* BooleanExpressionProcessor.swift */,
 			);
 			path = BooleanLogic;
+			sourceTree = "<group>";
+		};
+		21BC324226CC44F600584C8F /* MasterOfBooleanTests */ = {
+			isa = PBXGroup;
+			children = (
+				21BC324326CC44F600584C8F /* MasterOfBooleanTests.swift */,
+				21BC324526CC44F600584C8F /* Info.plist */,
+			);
+			path = MasterOfBooleanTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +145,24 @@
 			productReference = 212FC21926C5BC5500BECE91 /* MasterOfBoolean.app */;
 			productType = "com.apple.product-type.application";
 		};
+		21BC324026CC44F600584C8F /* MasterOfBooleanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 21BC324A26CC44F600584C8F /* Build configuration list for PBXNativeTarget "MasterOfBooleanTests" */;
+			buildPhases = (
+				21BC323D26CC44F600584C8F /* Sources */,
+				21BC323E26CC44F600584C8F /* Frameworks */,
+				21BC323F26CC44F600584C8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				21BC324726CC44F600584C8F /* PBXTargetDependency */,
+			);
+			name = MasterOfBooleanTests;
+			productName = MasterOfBooleanTests;
+			productReference = 21BC324126CC44F600584C8F /* MasterOfBooleanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -124,6 +174,10 @@
 				TargetAttributes = {
 					212FC21826C5BC5500BECE91 = {
 						CreatedOnToolsVersion = 12.5.1;
+					};
+					21BC324026CC44F600584C8F = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 212FC21826C5BC5500BECE91;
 					};
 				};
 			};
@@ -141,6 +195,7 @@
 			projectRoot = "";
 			targets = (
 				212FC21826C5BC5500BECE91 /* MasterOfBoolean */,
+				21BC324026CC44F600584C8F /* MasterOfBooleanTests */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +212,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21BC323F26CC44F600584C8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -165,7 +227,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				212FC22126C5BC5500BECE91 /* ViewController.swift in Sources */,
-				212FC23526C5CFE400BECE91 /* BooleanOperation.swift in Sources */,
 				212FC21D26C5BC5500BECE91 /* AppDelegate.swift in Sources */,
 				212FC23926C5CFFF00BECE91 /* BooleanExpressionManager.swift in Sources */,
 				212FC21F26C5BC5500BECE91 /* SceneDelegate.swift in Sources */,
@@ -175,7 +236,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		21BC323D26CC44F600584C8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BC324B26CC459000584C8F /* BooleanExpressionProcessor.swift in Sources */,
+				21BC324C26CC45B300584C8F /* BooleanExpression.swift in Sources */,
+				21BC324426CC44F600584C8F /* MasterOfBooleanTests.swift in Sources */,
+				21BC324D26CC4A8700584C8F /* DifficultyLevel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		21BC324726CC44F600584C8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 212FC21826C5BC5500BECE91 /* MasterOfBoolean */;
+			targetProxy = 21BC324626CC44F600584C8F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		212FC22226C5BC5500BECE91 /* Main.storyboard */ = {
@@ -349,6 +429,44 @@
 			};
 			name = Release;
 		};
+		21BC324826CC44F600584C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MasterOfBooleanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.teachmeskills.MasterOfBooleanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterOfBoolean.app/MasterOfBoolean";
+			};
+			name = Debug;
+		};
+		21BC324926CC44F600584C8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MasterOfBooleanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = by.teachmeskills.MasterOfBooleanTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MasterOfBoolean.app/MasterOfBoolean";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -366,6 +484,15 @@
 			buildConfigurations = (
 				212FC22E26C5BC5700BECE91 /* Debug */,
 				212FC22F26C5BC5700BECE91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		21BC324A26CC44F600584C8F /* Build configuration list for PBXNativeTarget "MasterOfBooleanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				21BC324826CC44F600584C8F /* Debug */,
+				21BC324926CC44F600584C8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
